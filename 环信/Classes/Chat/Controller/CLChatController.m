@@ -8,6 +8,9 @@
 
 #import "CLChatController.h"
 #import "CLInputView.h"
+#import "CLChat.h"
+#import "CLChatCell.h"
+#import "CLChatFrame.h"
 
 #define kInputViewH 44
 
@@ -31,7 +34,9 @@
         _tableView = [[UITableView alloc] init];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - kInputViewH);
+        _tableView.backgroundColor = BackGroud243Color;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height );
     }
     return _tableView;
 }
@@ -58,6 +63,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     [self.view addSubview: self.tableView];
     [self.view addSubview: self.inputView];
     
@@ -69,25 +75,22 @@
     
     //监听键盘弹出
     [self cl_keyboardWillChangeFrameNotification];
+    //注册 cell
+    [self.tableView registerClass:[CLChatCell class] forCellReuseIdentifier:NSStringFromClass([self class])];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 
     [super viewWillAppear:animated];
     self.navigationController.tabBarController.tabBar.hidden = YES;
+    //解决第一次进入聊天自动滚动到最后
+    [self cl_scrollToBottom];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
 
     [super viewWillDisappear:animated];
     self.navigationController.tabBarController.tabBar.hidden = NO;
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    //解决第一次进入聊天自动滚动到最后
-    [self cl_scrollToBottom];
 }
 
 #pragma mark - Table view data source
@@ -99,19 +102,21 @@
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chatMsgs"];
-     if (!cell) {
-         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"chatMsgs"];
-     }
-     EMMessage *msg = self.chatMsgs[indexPath.row];
-     EMTextMessageBody *body = msg.messageBodies.firstObject;
-     cell.textLabel.text = body.text;
     
- return cell;
- }
+     CLChatCell *cell = [tableView dequeueReusableCellWithIdentifier: NSStringFromClass([self class])];
+     cell.chatFrame = self.chatMsgs[indexPath.row];
+    
+     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    return [self.chatMsgs[indexPath.row] cellH];
+}
 
 
-#pragma mark - scrollView
+#pragma mark - scrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
 
     [self.view endEditing:YES];
@@ -191,7 +196,22 @@
     EMConversation *conversation = [[EaseMob sharedInstance].chatManager conversationForChatter:self.buddy.username conversationType:eConversationTypeChat];
     //获取会话中的聊天记录(从数据库中加载消息)
     NSArray *msgs = [conversation loadAllMessages];
-    [self.chatMsgs addObjectsFromArray:msgs];
+    
+    for (EMMessage *emsg in msgs) {
+        
+        //把 emsg 传过去 解析普通消息
+        CLChat *chat = [[CLChat alloc] init];
+        chat.emsg = emsg;
+        
+        //把 chat 传过去计算位置
+        CLChatFrame *chatFrame = [[CLChatFrame alloc] init];
+        chatFrame.chat = chat;
+        
+        [self.chatMsgs addObject:chatFrame];
+    }
+    
+    
+//    [self.chatMsgs addObjectsFromArray:msgs];
     
     //刷新表格
     [self.tableView reloadData];

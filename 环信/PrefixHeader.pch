@@ -18,5 +18,6 @@
 #import "JDStatusBarNotification.h"
 
 #define MainStoryboard  [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+#define BackGroud243Color [UIColor colorWithRed:243/255.0 green:243/255.0 blue:243/255.0 alpha:1];
 
 #endif /* PrefixHeader_pch */

@@ -52,6 +52,7 @@
 		20F2A0A21D545B5800DE95A1 /* CLChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0A11D545B5800DE95A1 /* CLChatCell.m */; };
 		20F2A0A51D545B8400DE95A1 /* CLChatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0A41D545B8400DE95A1 /* CLChatFrame.m */; };
 		20F2A0A81D545BA900DE95A1 /* CLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0A71D545BA900DE95A1 /* CLChat.m */; };
+		20F2A0AB1D54691000DE95A1 /* CLLongPressBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0AA1D54691000DE95A1 /* CLLongPressBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +234,8 @@
 		20F2A0A41D545B8400DE95A1 /* CLChatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChatFrame.m; sourceTree = "<group>"; };
 		20F2A0A61D545BA900DE95A1 /* CLChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChat.h; sourceTree = "<group>"; };
 		20F2A0A71D545BA900DE95A1 /* CLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChat.m; sourceTree = "<group>"; };
+		20F2A0A91D54691000DE95A1 /* CLLongPressBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLongPressBtn.h; sourceTree = "<group>"; };
+		20F2A0AA1D54691000DE95A1 /* CLLongPressBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLongPressBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +403,8 @@
 				20C6212E1D51F30400F3A88D /* CLInputView.xib */,
 				20F2A0A01D545B5800DE95A1 /* CLChatCell.h */,
 				20F2A0A11D545B5800DE95A1 /* CLChatCell.m */,
+				20F2A0A91D54691000DE95A1 /* CLLongPressBtn.h */,
+				20F2A0AA1D54691000DE95A1 /* CLLongPressBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1031,6 +1036,7 @@
 				20EB473D1D5107560000362D /* CLWeChatController.m in Sources */,
 				20C6212B1D51F2BC00F3A88D /* CLInputView.m in Sources */,
 				20F227D31D4E539C000CC1BC /* JDStatusBarNotification.m in Sources */,
+				20F2A0AB1D54691000DE95A1 /* CLLongPressBtn.m in Sources */,
 				20C621241D51F0C200F3A88D /* CLGDtailUserInfoController.m in Sources */,
 				20EAF5EA1D4CD9C500D8F8DE /* CLLogRegController.m in Sources */,
 				20F227B61D4DE9C2000CC1BC /* NSString+YFTimestamp.m in Sources */,

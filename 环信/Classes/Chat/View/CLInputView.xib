@@ -11,23 +11,18 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94F-xT-7MW">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94F-xT-7MW">
                     <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="mcH-4L-5fB"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" image="ToolViewInputVoice"/>
+                    <state key="highlighted" image="ToolViewEmotionHL"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ify-Nf-N07">
-                    <rect key="frame" x="256" y="0.0" width="44" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="44" id="FAA-S0-PPc"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S26-uA-z9X">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S26-uA-z9X">
                     <rect key="frame" x="212" y="0.0" width="44" height="44"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" image="ToolViewEmotion"/>
+                    <state key="highlighted" image="ToolViewInputText"/>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yHE-KT-Q4S">
                     <rect key="frame" x="44" y="5" width="168" height="34"/>
@@ -41,6 +36,14 @@
                         <constraint firstAttribute="height" constant="1" id="Ke4-4e-Dob"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ify-Nf-N07">
+                    <rect key="frame" x="256" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="FAA-S0-PPc"/>
+                    </constraints>
+                    <state key="normal" image="TypeSelectorBtn_Black"/>
+                    <state key="highlighted" image="TypeSelectorBtnHL_Black"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -70,4 +73,12 @@
             <point key="canvasLocation" x="245" y="175"/>
         </view>
     </objects>
+    <resources>
+        <image name="ToolViewEmotion" width="35" height="35"/>
+        <image name="ToolViewEmotionHL" width="35" height="35"/>
+        <image name="ToolViewInputText" width="35" height="35"/>
+        <image name="ToolViewInputVoice" width="35" height="35"/>
+        <image name="TypeSelectorBtnHL_Black" width="35" height="35"/>
+        <image name="TypeSelectorBtn_Black" width="35" height="35"/>
+    </resources>
 </document>

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class CLChatFrame;
 @interface CLChatCell : UITableViewCell
+
+/** <#注释#> */
+@property (nonatomic, strong)  CLChatFrame *chatFrame;
 
 @end
