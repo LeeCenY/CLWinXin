@@ -19,6 +19,11 @@ NSString * const YFWeChatTitleWillReceiveMsg = @"收取中...";
 
 @implementation CLWeChatController
 
++(instancetype)cl_weChatController {
+
+    return [MainStoryboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

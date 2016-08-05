@@ -1,5 +1,5 @@
 //
-//  CLWeChatController.h
+//  CLChatController.h
 //  CLWinXin
 //
 //  Created by nil on 16/8/3.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CLWeChatController : UITableViewController
-
-+ (instancetype)cl_weChatController;
-
+@interface CLChatController : UIViewController
+/** <#注释#> */
+@property (nonatomic, strong) EMBuddy *buddy;
 @end

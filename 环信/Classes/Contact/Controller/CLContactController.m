@@ -8,6 +8,9 @@
 
 #import "CLContactController.h"
 #import "CLContactCell.h"
+#import "CLGDtailUserInfoController.h"
+#import "CLTabBarController.h"
+#import "CLWeChatController.h"
 
 @interface CLContactController ()<EMChatManagerDelegate>
 
@@ -95,14 +98,21 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class]) forIndexPath:indexPath];
 
     CLContactCell *cell = [CLContactCell cl_cellWithTableView:tableView];
-    
     EMBuddy *buddy = self.friends[indexPath.row];
     cell.buddy = buddy;
-    
+
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    EMBuddy *buddy = self.friends[indexPath.row];
+    CLGDtailUserInfoController *duivc =[CLGDtailUserInfoController cl_detailUserInfoVC];
+    duivc.buddy = buddy;
+    [self.navigationController pushViewController:duivc animated:YES];
+    
 }
 
 //左滑删除

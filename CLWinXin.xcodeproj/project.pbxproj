@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		203B37841D51B14E00A23097 /* CLContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203B37821D51B14E00A23097 /* CLContactCell.m */; };
 		203B37851D51B14E00A23097 /* CLContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 203B37831D51B14E00A23097 /* CLContactCell.xib */; };
+		20C621241D51F0C200F3A88D /* CLGDtailUserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C621221D51F0C200F3A88D /* CLGDtailUserInfoController.m */; };
+		20C621251D51F0C200F3A88D /* CLGDtailUserInfoController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C621231D51F0C200F3A88D /* CLGDtailUserInfoController.storyboard */; };
+		20C621281D51F19B00F3A88D /* CLChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C621271D51F19B00F3A88D /* CLChatController.m */; };
+		20C6212B1D51F2BC00F3A88D /* CLInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C6212A1D51F2BC00F3A88D /* CLInputView.m */; };
+		20C6212F1D51F30400F3A88D /* CLInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C6212E1D51F30400F3A88D /* CLInputView.xib */; };
 		20EAF5191D4CA88B00D8F8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF5181D4CA88B00D8F8DE /* main.m */; };
 		20EAF51C1D4CA88B00D8F8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF51B1D4CA88B00D8F8DE /* AppDelegate.m */; };
 		20EAF5221D4CA88B00D8F8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF5201D4CA88B00D8F8DE /* Main.storyboard */; };
@@ -44,6 +49,9 @@
 		20F227D81D4E539C000CC1BC /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 20F227CE1D4E539C000CC1BC /* SVProgressHUD.bundle */; };
 		20F227D91D4E539C000CC1BC /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F227D01D4E539C000CC1BC /* SVProgressHUD.m */; };
 		20F227DA1D4E539C000CC1BC /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F227D21D4E539C000CC1BC /* SVRadialGradientLayer.m */; };
+		20F2A0A21D545B5800DE95A1 /* CLChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0A11D545B5800DE95A1 /* CLChatCell.m */; };
+		20F2A0A51D545B8400DE95A1 /* CLChatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0A41D545B8400DE95A1 /* CLChatFrame.m */; };
+		20F2A0A81D545BA900DE95A1 /* CLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A0A71D545BA900DE95A1 /* CLChat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,14 @@
 		203B37811D51B14E00A23097 /* CLContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLContactCell.h; sourceTree = "<group>"; };
 		203B37821D51B14E00A23097 /* CLContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLContactCell.m; sourceTree = "<group>"; };
 		203B37831D51B14E00A23097 /* CLContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLContactCell.xib; sourceTree = "<group>"; };
+		20C621211D51F0C200F3A88D /* CLGDtailUserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGDtailUserInfoController.h; sourceTree = "<group>"; };
+		20C621221D51F0C200F3A88D /* CLGDtailUserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGDtailUserInfoController.m; sourceTree = "<group>"; };
+		20C621231D51F0C200F3A88D /* CLGDtailUserInfoController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLGDtailUserInfoController.storyboard; sourceTree = "<group>"; };
+		20C621261D51F19B00F3A88D /* CLChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChatController.h; sourceTree = "<group>"; };
+		20C621271D51F19B00F3A88D /* CLChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChatController.m; sourceTree = "<group>"; };
+		20C621291D51F2BC00F3A88D /* CLInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLInputView.h; sourceTree = "<group>"; };
+		20C6212A1D51F2BC00F3A88D /* CLInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLInputView.m; sourceTree = "<group>"; };
+		20C6212E1D51F30400F3A88D /* CLInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLInputView.xib; sourceTree = "<group>"; };
 		20EAF5141D4CA88B00D8F8DE /* CLWinXin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLWinXin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF5181D4CA88B00D8F8DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20EAF51A1D4CA88B00D8F8DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -211,6 +227,12 @@
 		20F227D01D4E539C000CC1BC /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		20F227D11D4E539C000CC1BC /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		20F227D21D4E539C000CC1BC /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		20F2A0A01D545B5800DE95A1 /* CLChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChatCell.h; sourceTree = "<group>"; };
+		20F2A0A11D545B5800DE95A1 /* CLChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChatCell.m; sourceTree = "<group>"; };
+		20F2A0A31D545B8400DE95A1 /* CLChatFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChatFrame.h; sourceTree = "<group>"; };
+		20F2A0A41D545B8400DE95A1 /* CLChatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChatFrame.m; sourceTree = "<group>"; };
+		20F2A0A61D545BA900DE95A1 /* CLChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChat.h; sourceTree = "<group>"; };
+		20F2A0A71D545BA900DE95A1 /* CLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +375,8 @@
 			children = (
 				20EB473B1D5107560000362D /* CLWeChatController.h */,
 				20EB473C1D5107560000362D /* CLWeChatController.m */,
+				20C621261D51F19B00F3A88D /* CLChatController.h */,
+				20C621271D51F19B00F3A88D /* CLChatController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -360,6 +384,10 @@
 		20EAF5D01D4CD81300D8F8DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20F2A0A31D545B8400DE95A1 /* CLChatFrame.h */,
+				20F2A0A41D545B8400DE95A1 /* CLChatFrame.m */,
+				20F2A0A61D545BA900DE95A1 /* CLChat.h */,
+				20F2A0A71D545BA900DE95A1 /* CLChat.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +395,11 @@
 		20EAF5D11D4CD81300D8F8DE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20C621291D51F2BC00F3A88D /* CLInputView.h */,
+				20C6212A1D51F2BC00F3A88D /* CLInputView.m */,
+				20C6212E1D51F30400F3A88D /* CLInputView.xib */,
+				20F2A0A01D545B5800DE95A1 /* CLChatCell.h */,
+				20F2A0A11D545B5800DE95A1 /* CLChatCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +419,9 @@
 			children = (
 				20EB473E1D510F0B0000362D /* CLContactController.h */,
 				20EB473F1D510F0B0000362D /* CLContactController.m */,
+				20C621211D51F0C200F3A88D /* CLGDtailUserInfoController.h */,
+				20C621221D51F0C200F3A88D /* CLGDtailUserInfoController.m */,
+				20C621231D51F0C200F3A88D /* CLGDtailUserInfoController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -961,6 +997,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F227D81D4E539C000CC1BC /* SVProgressHUD.bundle in Resources */,
+				20C621251D51F0C200F3A88D /* CLGDtailUserInfoController.storyboard in Resources */,
+				20C6212F1D51F30400F3A88D /* CLInputView.xib in Resources */,
 				20EAF5271D4CA88B00D8F8DE /* LaunchScreen.storyboard in Resources */,
 				20EAF5241D4CA88B00D8F8DE /* Assets.xcassets in Resources */,
 				203B37851D51B14E00A23097 /* CLContactCell.xib in Resources */,
@@ -991,10 +1029,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				20EB473D1D5107560000362D /* CLWeChatController.m in Sources */,
+				20C6212B1D51F2BC00F3A88D /* CLInputView.m in Sources */,
 				20F227D31D4E539C000CC1BC /* JDStatusBarNotification.m in Sources */,
+				20C621241D51F0C200F3A88D /* CLGDtailUserInfoController.m in Sources */,
 				20EAF5EA1D4CD9C500D8F8DE /* CLLogRegController.m in Sources */,
 				20F227B61D4DE9C2000CC1BC /* NSString+YFTimestamp.m in Sources */,
+				20F2A0A81D545BA900DE95A1 /* CLChat.m in Sources */,
+				20F2A0A21D545B5800DE95A1 /* CLChatCell.m in Sources */,
+				20F2A0A51D545B8400DE95A1 /* CLChatFrame.m in Sources */,
 				20EAF51C1D4CA88B00D8F8DE /* AppDelegate.m in Sources */,
+				20C621281D51F19B00F3A88D /* CLChatController.m in Sources */,
 				20F227D51D4E539C000CC1BC /* JDStatusBarView.m in Sources */,
 				20F227D61D4E539C000CC1BC /* SVIndefiniteAnimatedView.m in Sources */,
 				20F227C01D4E402B000CC1BC /* CLSettingController.m in Sources */,
